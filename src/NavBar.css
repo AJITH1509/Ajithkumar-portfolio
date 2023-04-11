@@ -1,0 +1,30 @@
+
+.nav-items{
+    margin-right: 30px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.nav-items:hover{
+    transform: translateY(-5px);
+}
+#menu-icon{
+   display:none;
+}
+
+#app-bar{
+    background-color: #569daa00;
+    box-shadow: none;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .nav-items{
+        display: none;
+    }
+    #menu-icon{
+        display:block;
+     }
+}

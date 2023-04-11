@@ -1,0 +1,154 @@
+.intro{
+    display: flex;
+    height: 77vh;
+    margin-top: 4rem;
+}
+.i-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    padding: 50px;
+}
+.i-right{
+    flex:1;
+    display: flex;
+    align-items: center;
+  
+}
+.i-name{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.i-name :nth-child(1){
+    font-size: 3rem;
+    font-weight: bold;
+}
+.i-name :nth-child(2){
+    color: orange;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.i-name :nth-child(3){
+    color: rgb(0, 221, 241);
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+#i-btn{
+    max-width: 80px;
+}
+
+.floating-image {
+    margin: 0px auto;
+    max-width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    animation: floatAnimation 3s ease-in-out infinite; /* Adjust the animation duration and timing function as desired */
+    transition: all 0.3s;
+  }
+  .floating-image:hover {
+    cursor: pointer;
+    transform: rotateX(180deg); /* Update the hover effect distance as desired */
+  }
+  .i-icons{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+  
+  }
+  .i-icons a{
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+  }
+  .i-icons a:hover{
+    transform: scale(105%);
+  }
+  .i-icons :nth-child(1) img{
+    width:50px;
+    height:50px;
+  }
+  .i-icons :nth-child(2) img {
+    width:40px;
+    height:40px;
+  }
+  
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .intro{
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+  }
+  .i-left{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    padding: 10px;
+}
+.i-right{
+  margin: 0px auto;
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.floating-image {
+  margin: 0px auto;
+  max-width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  animation: floatAnimation 3s ease-in-out infinite; /* Adjust the animation duration and timing function as desired */
+  transition: all 0.3s;
+}
+.i-name{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.i-name :nth-child(1){
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.i-name :nth-child(2){
+  color: orange;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.i-name :nth-child(3){
+  color: rgb(0, 221, 241);
+  font-size: 2rem;
+  font-weight: bold;
+}
+#i-btn{
+  margin-right: 30px;
+  transform: scale(70%);
+  right: 13px;
+}
+.i-icons :nth-child(1) img{
+  width:25px;
+  height:25px;
+}
+.i-icons :nth-child(2) img {
+  width:20px;
+  height:20px;
+}
+    
+  }
