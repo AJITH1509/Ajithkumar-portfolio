@@ -19,6 +19,7 @@ import {
 } from "react-scroll";
 import { Home } from "./Home";
 import { Skills } from "./Skills";
+import { ContactUs } from "./Contact";
 
 export const NavBar = () => {
   return (
@@ -36,18 +37,54 @@ export const NavBar = () => {
           <Link
             className="test6"
             to="anchor"
-            offset={100}
+            offset={-100}
             spy={true}
             smooth={true}
             duration={1000}
           >
             <h3 className="nav-items">Home</h3>
           </Link>
+          <Link
+            className="test6"
+            to="about"
+            offset={-100}
+            spy={true}
+            smooth={true}
+            duration={1000}
+          >
+            <h3 className="nav-items">About</h3>
+          </Link>
+          <Link
+            className="test6"
+            to="skills"
+            offset={-200}
+            spy={true}
+            smooth={true}
+            duration={1000}
+          >
+            <h3 className="nav-items">Skills</h3>
+          </Link>
+          <Link
+            className="test6"
+            to="project"
+            offset={-100}
+            spy={true}
+            smooth={true}
+            duration={1000}
+          >
+            <h3 className="nav-items">Project</h3>
+          </Link>
+          <Link
+            className="test6"
+            to="contact"
+            offset={-100}
+            spy={true}
+            smooth={true}
+            duration={1000}
+          >
+            <h3 className="nav-items">Contact</h3>
+          </Link>
 
-          <h3 className="nav-items">About</h3>
-          <h3 className="nav-items">Skills</h3>
-          <h3 className="nav-items">Project</h3>
-          <h3 className="nav-items">Contact</h3>
           <IconButton
             id="menu-icon"
             color="inherit"
@@ -58,8 +95,15 @@ export const NavBar = () => {
           </IconButton>
         </Toolbar>
       </AppBar>
-      <Home />
-      <Skills />
+      <div id="anchor">
+        <Home name="anchor" />
+      </div>
+      <div id="skills">
+        <Skills />
+      </div>
+      <div id="contact">
+        <ContactUs />
+      </div>
     </div>
   );
 };

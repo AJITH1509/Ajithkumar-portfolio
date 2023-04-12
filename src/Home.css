@@ -93,7 +93,7 @@
     .intro{
       display: flex;
       flex-direction: column;
-      margin-top: 10px;
+      margin-top: 100px;
   }
   .i-left{
     margin: 0px auto;
@@ -105,7 +105,7 @@
     padding: 10px;
 }
 .i-right{
-  margin: 0px auto;
+  margin-top: 20px;
   flex:0;
   display: flex;
   justify-content: center;
@@ -141,18 +141,7 @@
 }
 #i-btn{
   margin-right: 30px;
-  transform: scale(70%);
-  right: 13px;
-}
-.i-icons :nth-child(1) img{
-  width:25px;
-  height:25px;
-}
-.i-icons :nth-child(2) img {
-  width:20px;
-  height:20px;
-}
-.intro{
-  margin-top: 4rem;
+  transform: scale(90%);
+  right: 10px;
 }
   }
