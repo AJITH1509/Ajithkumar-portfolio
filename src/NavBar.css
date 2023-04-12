@@ -12,10 +12,19 @@
 }
 
 #app-bar{
-    background-color: #569daa00;
+    background-color: rgba(255, 255, 255, 0.208);
     box-shadow: none;
 }
-
+#app-bar-name{
+    margin: 0px;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Italianno', cursive;
+}
+#app-bar-name span{
+    color: orange;
+}
 
 
 

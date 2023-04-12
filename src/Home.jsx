@@ -10,7 +10,7 @@ export const Home = () => {
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          <span>Hi! I am 👋</span>
+          <span>Hi, I am 👋</span>
           <span>AJITHKUMAR</span>
           <span>Full stack developer</span>
           <Button id="i-btn" variant="outlined">

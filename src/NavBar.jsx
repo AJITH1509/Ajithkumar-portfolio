@@ -18,14 +18,20 @@ import {
   scroller,
 } from "react-scroll";
 import { Home } from "./Home";
+import { Skills } from "./Skills";
 
 export const NavBar = () => {
   return (
     <div id="main-container-navbar">
-      <AppBar id="app-bar" position="static">
+      <AppBar id="app-bar" position="fixed">
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            AJITH
+          <Typography
+            id="app-bar-name"
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1 }}
+          >
+            Ajith <span>Kumar</span> M
           </Typography>
           <Link
             className="test6"
@@ -53,6 +59,7 @@ export const NavBar = () => {
         </Toolbar>
       </AppBar>
       <Home />
+      <Skills />
     </div>
   );
 };
