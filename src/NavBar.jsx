@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useState } from "react";
 import { styled, useTheme } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -22,6 +23,7 @@ import { Skills } from "./Skills";
 import { ContactUs } from "./Contact";
 
 export const NavBar = () => {
+  const [show, setShow] = useState(false);
   return (
     <div id="main-container-navbar">
       <AppBar id="app-bar" position="fixed">
@@ -86,6 +88,7 @@ export const NavBar = () => {
           </Link>
 
           <IconButton
+            onClick={() => setShow(!show)}
             id="menu-icon"
             color="inherit"
             aria-label="open drawer"
@@ -94,7 +97,62 @@ export const NavBar = () => {
             <MenuIcon />
           </IconButton>
         </Toolbar>
+        {show ? (
+          <div className="toggle-nav-bar">
+            <Link
+              onClick={() => setShow(!show)}
+              to="anchor"
+              offset={-50}
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              <h3>Home</h3>
+            </Link>
+            <Link
+              onClick={() => setShow(!show)}
+              to="about"
+              offset={-100}
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              <h3 className="">About</h3>
+            </Link>
+            <Link
+              onClick={() => setShow(!show)}
+              to="skills"
+              offset={-100}
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              <h3 className="">Skills</h3>
+            </Link>
+            <Link
+              onClick={() => setShow(!show)}
+              to="project"
+              offset={-100}
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              <h3 className="">Project</h3>
+            </Link>
+            <Link
+              onClick={() => setShow(!show)}
+              to="contact"
+              offset={0}
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              <h3 className="">Contact</h3>
+            </Link>
+          </div>
+        ) : null}
       </AppBar>
+
       <div id="anchor">
         <Home name="anchor" />
       </div>

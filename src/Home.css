@@ -46,15 +46,15 @@
     max-width: 450px;
     height: 450px;
     border-radius: 50%;
-    animation: floatAnimation 3s ease-in-out infinite; /* Adjust the animation duration and timing function as desired */
+    animation: floatAnimation 3s ease-in-out infinite; 
     transition: all 0.3s;
   }
   .floating-image:hover {
     cursor: pointer;
-    transform: rotateX(180deg); /* Update the hover effect distance as desired */
+    transform: rotateX(180deg);
   }
   .i-icons{
-    margin-top: 30px;
+    margin-top: 130px;
     display:flex;
     align-items: center;
     gap: 10px;
@@ -143,5 +143,12 @@
   margin-right: 30px;
   transform: scale(90%);
   right: 10px;
+}
+.i-icons{
+  margin-top: 30px;
+  display:flex;
+  align-items: center;
+  gap: 10px;
+
 }
   }
