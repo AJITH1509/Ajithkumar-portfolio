@@ -60,12 +60,12 @@
     gap: 10px;
   
   }
-  .i-icons a{
+  .i-icons p{
     display: flex;
     align-items: center;
     transition: all 0.3s;
   }
-  .i-icons a:hover{
+  .i-icons p:hover{
     transform: scale(105%);
   }
   .i-icons :nth-child(1) img{

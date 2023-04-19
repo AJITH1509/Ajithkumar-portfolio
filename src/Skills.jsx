@@ -25,7 +25,7 @@ export const Skills = () => {
           id="skill-cards"
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-delay="450"
         >
           <img
             className="skills-image"
@@ -37,7 +37,7 @@ export const Skills = () => {
         <div
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-delay="450"
           id="skill-cards"
         >
           <img
@@ -49,7 +49,7 @@ export const Skills = () => {
         <div
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-delay="450"
           id="skill-cards"
         >
           <img
@@ -61,7 +61,7 @@ export const Skills = () => {
         <div
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-delay="450"
           id="skill-cards"
         >
           <img
@@ -73,7 +73,7 @@ export const Skills = () => {
         <div
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-delay="450"
           id="skill-cards"
         >
           <img
@@ -85,7 +85,7 @@ export const Skills = () => {
         <div
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-delay="450"
           id="skill-cards"
         >
           <img
@@ -97,7 +97,7 @@ export const Skills = () => {
         <div
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-delay="450"
           id="skill-cards"
         >
           <img
@@ -109,7 +109,7 @@ export const Skills = () => {
         <div
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-delay="450"
           id="skill-cards"
         >
           <img
@@ -121,7 +121,7 @@ export const Skills = () => {
         <div
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-delay="450"
           id="skill-cards"
         >
           <img

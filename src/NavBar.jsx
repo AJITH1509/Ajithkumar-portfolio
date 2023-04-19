@@ -21,6 +21,7 @@ import {
 import { Home } from "./Home";
 import { Skills } from "./Skills";
 import { ContactUs } from "./Contact";
+import { Project } from "./Project";
 
 export const NavBar = () => {
   const [show, setShow] = useState(false);
@@ -158,6 +159,9 @@ export const NavBar = () => {
       </div>
       <div id="skills">
         <Skills />
+      </div>
+      <div id="project">
+        <Project />
       </div>
       <div id="contact">
         <ContactUs />

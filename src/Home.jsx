@@ -4,30 +4,48 @@ import { Button } from "@mui/material";
 import astronaut from "../images/homeimage.png";
 import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
+import { useEffect } from "react";
+import AOS from "aos";
 
 function redirectToLink() {
-  window.location.href =
-    "https://drive.google.com/file/d/1gvJRZZ5cdF38X8ZxIciwdnFXmqiuOa9t/view";
+  window.open(
+    "https://drive.google.com/file/d/1gvJRZZ5cdF38X8ZxIciwdnFXmqiuOa9t/view"
+  );
 }
 
 export const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          <span>Hi, I am 👋</span>
-          <span>AJITHKUMAR</span>
-          <span>Full stack developer</span>
+          <span data-aos="fade-down" data-aos-delay="1050">
+            Hi, I am 👋
+          </span>
+          <span data-aos="fade-right" data-aos-delay="450">
+            AJITHKUMAR
+          </span>
+          <span data-aos="fade-up" data-aos-delay="1000">
+            Full stack developer
+          </span>
           <Button onClick={redirectToLink} id="i-btn" variant="outlined">
             Resume
           </Button>
           <div className="i-icons">
-            <a href="https://github.com/AJITH1509">
+            <p onClick={() => window.open("https://github.com/AJITH1509")}>
               <img src={github} />
-            </a>
-            <a href="https://www.linkedin.com/in/ajithkumar-m-2603b5175/">
+            </p>
+            <p
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/ajithkumar-m-2603b5175/"
+                )
+              }
+            >
               <img src={linkedin} />
-            </a>
+            </p>
             {/* <img src={github}/> */}
           </div>
         </div>

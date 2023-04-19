@@ -1,0 +1,37 @@
+.project-main-container{
+    min-height: 80vh;
+}
+.project-main-container h1{
+    text-align: center;
+    color: white;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 350px;
+    transition: all 0.5s;
+  }
+  .swiper-slide:hover{
+    transform: scale(1.2);
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 300px;
+
+  }
+  .slider-buttons{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
