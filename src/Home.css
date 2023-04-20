@@ -63,6 +63,7 @@
   .i-icons p{
     display: flex;
     align-items: center;
+    cursor: pointer;
     transition: all 0.3s;
   }
   .i-icons p:hover{

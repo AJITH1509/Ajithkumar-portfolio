@@ -1,6 +1,10 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import dailycolor from "../images/dailycolor.jpg";
+import movieApp from "../images/movieApp.jpg";
+import urlShortener from "../images/urlShortener.jpg";
+import webScrapper from "../images/webScrapper.jpg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -12,6 +16,10 @@ import "./project.css";
 
 // import required modules
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
+
+const openLink = (link) => {
+  window.open(link);
+};
 
 export function Project() {
   return (
@@ -35,35 +43,37 @@ export function Project() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          <img src={dailycolor} />
           <div className="slider-buttons">
-            <button>backend</button>
-            <button>backend</button>
-            <button>backend</button>
+            <button>FrontEnd Source</button>
+            <button>Live</button>
+            <button>BackEnd Source</button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          <img src={movieApp} />
           <div className="slider-buttons">
-            <button>backend</button>
-            <button>backend</button>
-            <button>backend</button>
+            <button>FrontEnd Source</button>
+            <button onClick={openLink("https://allinone1.netlify.app/")}>
+              Live
+            </button>
+            <button>BackEnd Source</button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          <img src={urlShortener} />
           <div className="slider-buttons">
-            <button>backend</button>
-            <button>backend</button>
-            <button>backend</button>
+            <button>FrontEnd Source</button>
+            <button>Live</button>
+            <button>BackEnd Source</button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          <img src={webScrapper} />
           <div className="slider-buttons">
-            <button>backend</button>
-            <button>backend</button>
-            <button>backend</button>
+            <button>FrontEnd Source</button>
+            <button>Live</button>
+            <button>BackEnd Source</button>
           </div>
         </SwiperSlide>
       </Swiper>
