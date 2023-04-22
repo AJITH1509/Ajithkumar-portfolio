@@ -22,6 +22,7 @@ import { Home } from "./Home";
 import { Skills } from "./Skills";
 import { ContactUs } from "./Contact";
 import { Project } from "./Project";
+import { About } from "./About";
 
 export const NavBar = () => {
   const [show, setShow] = useState(false);
@@ -60,7 +61,7 @@ export const NavBar = () => {
           <Link
             className="test6"
             to="skills"
-            offset={-200}
+            offset={-100}
             spy={true}
             smooth={true}
             duration={1000}
@@ -156,6 +157,9 @@ export const NavBar = () => {
 
       <div id="anchor">
         <Home name="anchor" />
+      </div>
+      <div id="about">
+        <About />
       </div>
       <div id="skills">
         <Skills />

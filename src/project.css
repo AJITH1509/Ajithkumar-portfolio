@@ -2,6 +2,7 @@
     min-height: 80vh;
 }
 .project-main-container h1{
+  font-size: 40px;
     text-align: center;
     color: white;
 }
@@ -9,7 +10,7 @@
 .swiper {
     width: 100%;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
   
   .swiper-slide {
@@ -52,4 +53,20 @@
   .slider-buttons button:hover{
     background-color: #3e8e41;
   }
+
+  @media screen and (max-width: 768px){
+    .project-main-container h1{
+       font-size: 25px;
+    }
+    .project-main-container{
+      min-height: 66vh;
+      margin-top: 50px;
+    }
+    .swiper {
+      padding-top: 10px;
+      padding-bottom: 50px;
+    }
+    
+  }
+  
  

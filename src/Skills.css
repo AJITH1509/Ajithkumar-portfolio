@@ -1,8 +1,9 @@
 .skills-container{
-    margin-top: 60px;
-    min-height: 77vh;
+    min-height: 88vh;
+    padding: 5px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 .skill-heading{
