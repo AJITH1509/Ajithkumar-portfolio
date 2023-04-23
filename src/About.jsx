@@ -1,11 +1,19 @@
 import * as React from "react";
+import { useEffect } from "react";
 import "./About.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const About = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="about-container">
-      <h1>About Me</h1>
-      <p>
+      <h1 data-aos="fade-down" data-aos-duration="1000">
+        About Me
+      </h1>
+      <p data-aos="fade-up" data-aos-duration="1500">
         As a fresh graduate with a passion for web development, I am excited to
         start my career as a FullStack Developer. I have a strong foundation in
         <span> HTML, CSS, and JavaScript,</span> as well as proficiency in

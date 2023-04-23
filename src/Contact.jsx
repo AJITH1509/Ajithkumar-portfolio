@@ -1,11 +1,18 @@
 import React, { useRef } from "react";
+import { useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import "./Contact.css";
 
 export const ContactUs = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -32,10 +39,20 @@ export const ContactUs = () => {
   return (
     <div className="contact-container">
       <div className="contact-left">
-        <h1>Get in touch</h1>
-        <p>Contact me</p>
+        <h1 data-aos="fade-right" data-aos-duration="500">
+          Get in touch
+        </h1>
+        <p data-aos="fade-left" data-aos-duration="500">
+          Contact me
+        </p>
       </div>
-      <form className="form-container" ref={form} onSubmit={sendEmail}>
+      <form
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="form-container"
+        ref={form}
+        onSubmit={sendEmail}
+      >
         <div className="text-field-container">
           <TextField
             sx={{ maxWidth: "400px" }}
