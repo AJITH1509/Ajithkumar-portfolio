@@ -20,6 +20,7 @@ export function Project() {
   const projects = [
     {
       id: "daily-color",
+      title: "Daily color suggestion",
       imgSrc: dailycolor,
       frontEndSource: "https://github.com/AJITH1509/capstone-project-front-end",
       live: "https://daily-color.netlify.app",
@@ -27,6 +28,7 @@ export function Project() {
     },
     {
       id: "movie-app",
+      title: "Movie Review App",
       imgSrc: movieApp,
       frontEndSource: "https://github.com/AJITH1509/react-movie-task",
       live: "https://allinone1.netlify.app",
@@ -34,6 +36,7 @@ export function Project() {
     },
     {
       id: "url-shortener",
+      title: "Url Shortener",
       imgSrc: urlShortener,
       frontEndSource: "https://github.com/AJITH1509/url-shortener",
       live: "https://mini-link.netlify.app",
@@ -41,6 +44,7 @@ export function Project() {
     },
     {
       id: "web-scrapper",
+      title: "Web Scrapper",
       imgSrc: webScrapper,
       frontEndSource:
         "https://github.com/AJITH1509/webcode-2-webscrape-frontend",
@@ -82,6 +86,7 @@ export function Project() {
         {projects.map((project) => (
           <SwiperSlide key={project.id}>
             <img src={project.imgSrc} alt={`Project ${project.id}`} />
+            <h2>{project.title}</h2>
             <div className="slider-buttons">
               <button onClick={() => openLink(project.frontEndSource)}>
                 FrontEnd Source
