@@ -38,9 +38,9 @@
     .about-container h1{
         font-size: 25px;
     }
-    /* .about-container{
-
-     margin-top: 10px;
+   .about-container{
+    min-height:unset;
+     margin-top: 20px;
     
-    } */
+    } 
 }

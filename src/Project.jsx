@@ -10,8 +10,13 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./project.css";
+import { useEffect } from "react";
+import AOS from "aos";
 
 export function Project() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const projects = [
     {
       id: "daily-color",
@@ -52,8 +57,12 @@ export function Project() {
 
   return (
     <div className="project-main-container">
-      <h1>Project</h1>
+      <h1 data-aos="fade-down" data-aos-delay="500">
+        Project
+      </h1>
       <Swiper
+        data-aos="fade-up"
+        data-aos-delay="500"
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}

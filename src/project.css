@@ -59,7 +59,7 @@
        font-size: 25px;
     }
     .project-main-container{
-      min-height: 66vh;
+      min-height: unset;
       margin-top: 50px;
     }
     .swiper {

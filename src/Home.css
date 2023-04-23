@@ -1,6 +1,6 @@
 .intro{
     display: flex;
-    height: 88vh;
+    min-height: 88vh;
     margin-top: 4rem;
 }
 .i-left{
@@ -95,7 +95,7 @@
       display: flex;
       flex-direction: column;
       margin-top: 100px;
-      height: none;
+      min-height: unset;
   }
   .i-left{
     margin: 0px auto;

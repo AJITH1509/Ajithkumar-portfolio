@@ -38,8 +38,9 @@
 }
 @media screen and (max-width: 768px) {
     .contact-container{
-        min-height: 80vh;
+        min-height: unset;
         margin-top: 20px;
+        margin-bottom: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
