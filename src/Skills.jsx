@@ -2,15 +2,17 @@ import React from "react";
 import { useEffect } from "react";
 import "./Skills.css";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
+import "aos/dist/aos.css";
+import { ThemeContext } from "./NavBar";
+import { useContext } from "react";
 
 export const Skills = () => {
+  const { styles } = useContext(ThemeContext);
   useEffect(() => {
     AOS.init();
   }, []);
   return (
-    <div className="skills-container">
+    <div style={{ backgroundColor: styles }} className="skills-container">
       <div>
         <h2
           data-aos="fade-down"

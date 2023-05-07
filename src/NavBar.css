@@ -42,6 +42,9 @@
     .nav-items{
         display: none;
     }
+    #nav-items{
+        display: none;
+    }
     #menu-icon{
         display:block;
      }

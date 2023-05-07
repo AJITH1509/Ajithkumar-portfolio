@@ -5,10 +5,12 @@ import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 import "./Contact.css";
+import { ThemeContext } from "./NavBar";
+import { useContext } from "react";
 
 export const ContactUs = () => {
+  const { styles } = useContext(ThemeContext);
   useEffect(() => {
     AOS.init();
   }, []);
@@ -37,7 +39,7 @@ export const ContactUs = () => {
   };
 
   return (
-    <div className="contact-container">
+    <div style={{ backgroundColor: styles }} className="contact-container">
       <div className="contact-left">
         <h1 data-aos="fade-right" data-aos-duration="500">
           Get in touch

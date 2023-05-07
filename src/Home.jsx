@@ -6,7 +6,8 @@ import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
 import { useEffect } from "react";
 import AOS from "aos";
-
+import { ThemeContext } from "./NavBar";
+import { useContext } from "react";
 function redirectToLink() {
   window.open(
     "https://drive.google.com/file/d/1gvJRZZ5cdF38X8ZxIciwdnFXmqiuOa9t/view"
@@ -14,11 +15,12 @@ function redirectToLink() {
 }
 
 export const Home = () => {
+  const { styles } = useContext(ThemeContext);
   useEffect(() => {
     AOS.init();
   }, []);
   return (
-    <div className="intro">
+    <div style={{ backgroundColor: styles }} className="intro">
       <div className="i-left">
         <div className="i-name">
           <span data-aos="fade-down" data-aos-delay="1050">

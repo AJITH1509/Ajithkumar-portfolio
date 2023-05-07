@@ -9,23 +9,22 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import "./NavBar.css";
 import * as Scroll from "react-scroll";
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { Home } from "./Home";
 import { Skills } from "./Skills";
 import { ContactUs } from "./Contact";
 import { Project } from "./Project";
 import { About } from "./About";
+import { createContext } from "react";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+
+export const ThemeContext = createContext(null);
 
 export const NavBar = () => {
+  const [mode, setMode] = useState(true);
   const [show, setShow] = useState(false);
+  const styles = mode ? "#070A52" : "#2C3333";
   return (
     <div id="main-container-navbar">
       <AppBar id="app-bar" position="fixed">
@@ -88,7 +87,23 @@ export const NavBar = () => {
           >
             <h3 className="nav-items">Contact</h3>
           </Link>
-
+          {mode ? (
+            <IconButton
+              id="nav-items"
+              sx={{ color: "yellow" }}
+              onClick={() => setMode(!mode)}
+            >
+              <LightModeIcon />
+            </IconButton>
+          ) : (
+            <IconButton
+              id="nav-items"
+              sx={{ color: "white" }}
+              onClick={() => setMode(!mode)}
+            >
+              <DarkModeIcon />
+            </IconButton>
+          )}
           <IconButton
             onClick={() => setShow(!show)}
             id="menu-icon"
@@ -154,22 +169,23 @@ export const NavBar = () => {
           </div>
         ) : null}
       </AppBar>
-
-      <div id="anchor">
-        <Home name="anchor" />
-      </div>
-      <div id="about">
-        <About />
-      </div>
-      <div id="skills">
-        <Skills />
-      </div>
-      <div id="project">
-        <Project />
-      </div>
-      <div id="contact">
-        <ContactUs />
-      </div>
+      <ThemeContext.Provider value={{ styles, mode }}>
+        <div id="anchor">
+          <Home />
+        </div>
+        <div id="about">
+          <About />
+        </div>
+        <div id="skills">
+          <Skills />
+        </div>
+        <div id="project">
+          <Project />
+        </div>
+        <div id="contact">
+          <ContactUs />
+        </div>
+      </ThemeContext.Provider>
     </div>
   );
 };

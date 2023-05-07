@@ -3,13 +3,16 @@ import { useEffect } from "react";
 import "./About.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ThemeContext } from "./NavBar";
+import { useContext } from "react";
 
 export const About = () => {
+  const { styles } = useContext(ThemeContext);
   useEffect(() => {
     AOS.init();
   }, []);
   return (
-    <div className="about-container">
+    <div style={{ backgroundColor: styles }} className="about-container">
       <h1 data-aos="fade-down" data-aos-duration="1000">
         About Me
       </h1>

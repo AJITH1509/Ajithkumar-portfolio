@@ -12,8 +12,11 @@ import "swiper/css/navigation";
 import "./project.css";
 import { useEffect } from "react";
 import AOS from "aos";
+import { ThemeContext } from "./NavBar";
+import { useContext } from "react";
 
 export function Project() {
+  const { styles } = useContext(ThemeContext);
   useEffect(() => {
     AOS.init();
   }, []);
@@ -60,7 +63,7 @@ export function Project() {
   };
 
   return (
-    <div className="project-main-container">
+    <div style={{ backgroundColor: styles }} className="project-main-container">
       <h1 data-aos="fade-down" data-aos-delay="500">
         Project
       </h1>
