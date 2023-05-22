@@ -4,6 +4,7 @@ import dailycolor from "../images/dailycolor.jpg";
 import movieApp from "../images/movieApp.jpg";
 import urlShortener from "../images/urlShortener.jpg";
 import webScrapper from "../images/webScrapper.jpg";
+import Ekart from "../images/Ekart.jpg";
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -21,6 +22,14 @@ export function Project() {
     AOS.init();
   }, []);
   const projects = [
+    {
+      id: "E-kart",
+      title: "E Kart",
+      imgSrc: Ekart,
+      frontEndSource: "https://github.com/AJITH1509/e-commerce-frontend",
+      live: "https://e-kart-shop.netlify.app",
+      backEndSource: "https://github.com/AJITH1509/e-commerce-backend",
+    },
     {
       id: "daily-color",
       title: "Daily color suggestion",
@@ -92,11 +101,11 @@ export function Project() {
             <h2>{project.title}</h2>
             <div className="slider-buttons">
               <button onClick={() => openLink(project.frontEndSource)}>
-                FrontEnd Source
+                Front End Source
               </button>
               <button onClick={() => openLink(project.live)}>Live</button>
               <button onClick={() => openLink(project.backEndSource)}>
-                BackEnd Source
+                Back End Source
               </button>
             </div>
           </SwiperSlide>
