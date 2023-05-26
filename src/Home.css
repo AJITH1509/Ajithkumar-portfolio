@@ -22,17 +22,17 @@
     flex-direction: column;
     gap: 20px;
 }
-.i-name :nth-child(1){
+.hi{
   color: white;
     font-size: 3rem;
     font-weight: bold;
 }
-.i-name :nth-child(2){
+.myname{
     color: orange;
     font-size: 3.5rem;
     font-weight: bold;
 }
-.i-name :nth-child(3){
+.role{
     color: rgb(0, 221, 241);
     font-size: 4.5rem;
     font-weight: bold;
@@ -49,35 +49,28 @@
     animation: floatAnimation 3s ease-in-out infinite; 
     transition: all 0.3s;
   }
-  .floating-image:hover {
-    cursor: pointer;
-    transform: rotateX(180deg);
-  }
   .i-icons{
     margin-top: 130px;
     display:flex;
     align-items: center;
-    gap: 10px;
-  
+    gap: 20px;
   }
-  .i-icons p{
+  .i-icons div{
+    color: white;
     display: flex;
     align-items: center;
     cursor: pointer;
+    font-size: 20px;
+    gap: 5px;
     transition: all 0.3s;
   }
-  .i-icons p:hover{
+  .i-icons div:hover{
     transform: scale(105%);
   }
-  .i-icons :nth-child(1) img{
+  .i-icons img{
     width:50px;
     height:50px;
   }
-  .i-icons :nth-child(2) img {
-    width:40px;
-    height:40px;
-  }
-  
   @keyframes floatAnimation {
     0% {
       transform: translateY(0);
@@ -127,16 +120,16 @@
   flex-direction: column;
   gap: 10px;
 }
-.i-name :nth-child(1){
+.hi{
   font-size: 1.2rem;
   font-weight: bold;
 }
-.i-name :nth-child(2){
+.myname{
   color: orange;
   font-size: 1.3rem;
   font-weight: bold;
 }
-.i-name :nth-child(3){
+.role{
   color: rgb(0, 221, 241);
   font-size: 2rem;
   font-weight: bold;
@@ -152,5 +145,18 @@
   align-items: center;
   gap: 10px;
 
+}
+.i-icons div{
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+  gap: 5px;
+  transition: all 0.3s;
+}
+.i-icons img{
+  width:30px;
+  height:30px;
 }
   }

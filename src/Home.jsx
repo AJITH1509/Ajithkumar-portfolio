@@ -4,6 +4,7 @@ import { Button } from "@mui/material";
 import astronaut from "../images/homeimage.png";
 import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
+import gmail from "../images/gmail.png";
 import { useEffect } from "react";
 import AOS from "aos";
 import { ThemeContext } from "./NavBar";
@@ -23,23 +24,24 @@ export const Home = () => {
     <div style={{ backgroundColor: styles }} className="intro">
       <div className="i-left">
         <div className="i-name">
-          <span data-aos="fade-down" data-aos-delay="1050">
-            Hi, I am 👋
+          <span className="hi" data-aos="fade-down" data-aos-delay="1050">
+            Hi 👋, I am
           </span>
-          <span data-aos="fade-right" data-aos-delay="450">
+          <span className="myname" data-aos="fade-right" data-aos-delay="450">
             AJITHKUMAR
           </span>
-          <span data-aos="fade-up" data-aos-delay="1000">
+          <span className="role" data-aos="fade-up" data-aos-delay="1000">
             Full stack developer
           </span>
           <Button onClick={redirectToLink} id="i-btn" variant="outlined">
             Resume
           </Button>
           <div className="i-icons">
-            <p onClick={() => window.open("https://github.com/AJITH1509")}>
+            <div onClick={() => window.open("https://github.com/AJITH1509")}>
               <img src={github} />
-            </p>
-            <p
+              <p>AJITH1509</p>
+            </div>
+            <div
               onClick={() =>
                 window.open(
                   "https://www.linkedin.com/in/ajithkumar-m-2603b5175/"
@@ -47,8 +49,8 @@ export const Home = () => {
               }
             >
               <img src={linkedin} />
-            </p>
-            {/* <img src={github}/> */}
+              <p>Ajithkumar M</p>
+            </div>
           </div>
         </div>
       </div>

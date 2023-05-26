@@ -47,14 +47,6 @@ export function Project() {
       backEndSource: "https://github.com/AJITH1509/express.js-practice",
     },
     {
-      id: "url-shortener",
-      title: "Url Shortener",
-      imgSrc: urlShortener,
-      frontEndSource: "https://github.com/AJITH1509/url-shortener",
-      live: "https://mini-link.netlify.app",
-      backEndSource: "https://github.com/AJITH1509/Url-shortener-node",
-    },
-    {
       id: "web-scrapper",
       title: "Web Scrapper",
       imgSrc: webScrapper,
