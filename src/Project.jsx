@@ -2,9 +2,9 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import dailycolor from "../images/dailycolor.jpg";
 import movieApp from "../images/movieApp.jpg";
-import urlShortener from "../images/urlShortener.jpg";
 import webScrapper from "../images/webScrapper.jpg";
 import Ekart from "../images/Ekart.jpg";
+import colorBlock from "../images/colorBlock.jpg";
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -56,6 +56,13 @@ export function Project() {
       backEndSource:
         "https://github.com/AJITH1509/webcode-2-webscraping-backend",
     },
+    {
+      id: "color-blocks",
+      title: "Color Block",
+      imgSrc: colorBlock,
+      frontEndSource: "https://github.com/AJITH1509/Color-Game",
+      live: "https://color-blocks.netlify.app/",
+    },
   ];
 
   const openLink = (link) => {
@@ -96,9 +103,11 @@ export function Project() {
                 Front End Source
               </button>
               <button onClick={() => openLink(project.live)}>Live</button>
-              <button onClick={() => openLink(project.backEndSource)}>
-                Back End Source
-              </button>
+              {project.backEndSource ? (
+                <button onClick={() => openLink(project.backEndSource)}>
+                  Back End Source
+                </button>
+              ) : null}
             </div>
           </SwiperSlide>
         ))}
