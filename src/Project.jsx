@@ -66,7 +66,6 @@ export function Project() {
   ];
 
   const openLink = (link) => {
-    console.log("hi");
     window.open(link, "_blank");
   };
 
