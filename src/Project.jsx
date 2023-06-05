@@ -6,10 +6,6 @@ import webScrapper from "../images/webScrapper.jpg";
 import Ekart from "../images/Ekart.jpg";
 import colorBlock from "../images/colorBlock.jpg";
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import "./project.css";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -74,27 +70,12 @@ export function Project() {
       <h1 data-aos="fade-down" data-aos-delay="500">
         Project
       </h1>
-      <Swiper
-        data-aos="fade-up"
-        data-aos-delay="500"
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 3,
-          slideShadows: true,
-        }}
-        navigation
-        pagination={true}
-        modules={[EffectCoverflow, Pagination, Navigation]}
-        className="mySwiper"
-      >
+      <p>
+        The login credentials are already filled in the text field by default.
+      </p>
+      <div className="mySwiper">
         {projects.map((project) => (
-          <SwiperSlide key={project.id}>
+          <div className="project-card" key={project.id}>
             <img src={project.imgSrc} alt={`Project ${project.id}`} />
             <h2>{project.title}</h2>
             <div className="slider-buttons">
@@ -108,9 +89,9 @@ export function Project() {
                 </button>
               ) : null}
             </div>
-          </SwiperSlide>
+          </div>
         ))}
-      </Swiper>
+      </div>
     </div>
   );
 }
