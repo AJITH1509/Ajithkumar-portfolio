@@ -25,6 +25,7 @@ export function Project() {
       frontEndSource: "https://github.com/AJITH1509/e-commerce-frontend",
       live: "https://e-kart-shop.netlify.app",
       backEndSource: "https://github.com/AJITH1509/e-commerce-backend",
+      techStack: "Reactjs, NodeJs, Express, MongoDb",
     },
     {
       id: "daily-color",
@@ -33,6 +34,7 @@ export function Project() {
       frontEndSource: "https://github.com/AJITH1509/capstone-project-front-end",
       live: "https://daily-color.netlify.app",
       backEndSource: "https://github.com/AJITH1509/Capstone-project-back-end",
+      techStack: "Reactjs, NodeJs, Express, MongoDb",
     },
     {
       id: "movie-app",
@@ -41,6 +43,7 @@ export function Project() {
       frontEndSource: "https://github.com/AJITH1509/react-movie-task",
       live: "https://allinone1.netlify.app",
       backEndSource: "https://github.com/AJITH1509/express.js-practice",
+      techStack: "Reactjs, NodeJs, Express, MongoDb",
     },
     {
       id: "web-scrapper",
@@ -51,6 +54,7 @@ export function Project() {
       live: "https://graceful-syrniki-59528c.netlify.app/",
       backEndSource:
         "https://github.com/AJITH1509/webcode-2-webscraping-backend",
+      techStack: "Reactjs, NodeJs, Express, MongoDb",
     },
     {
       id: "color-blocks",
@@ -58,6 +62,7 @@ export function Project() {
       imgSrc: colorBlock,
       frontEndSource: "https://github.com/AJITH1509/Color-Game",
       live: "https://color-blocks.netlify.app/",
+      techStack: "Reactjs",
     },
   ];
 
@@ -77,7 +82,10 @@ export function Project() {
         {projects.map((project) => (
           <div className="project-card" key={project.id}>
             <img src={project.imgSrc} alt={`Project ${project.id}`} />
-            <h2>{project.title}</h2>
+            <h2 style={{ color: "violet" }}>{project.title}</h2>
+            <h4 style={{ textAlign: "center" }}>
+              Tech stack :{project.techStack}
+            </h4>
             <div className="slider-buttons">
               <button onClick={() => openLink(project.frontEndSource)}>
                 Front End Source
