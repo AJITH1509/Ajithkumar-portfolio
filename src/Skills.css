@@ -58,8 +58,14 @@
     gap: 10px;
     
 }
+.MuiBox-root{
+    width: 100px;
+ }
 
 @media screen and (max-width: 500px) {
+   .MuiBox-root{
+      width: 70px;
+   }
     .skills-image {
         width: 32px;
         height: 32px;
