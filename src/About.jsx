@@ -20,7 +20,7 @@ export const About = () => {
         As a fresh graduate with a passion for web development, I am excited to
         start my career as a FullStack Developer. I have a strong foundation in
         <span> HTML, CSS, and JavaScript,</span> as well as proficiency in
-        <span className="courses"> React, Node, and MongoDB</span>. I am
+        <span className="courses"> React, Node, Express and MongoDB</span>. I am
         knowledgeable in both Frontend and Backend development, and I am
         confident in my ability to handle any part of the process with ease,
         including database management with MongoDB. As a collaborative team

@@ -175,6 +175,26 @@ export const Skills = () => {
             <LinearProgress color="success" variant="determinate" value={90} />
           </Box>
         </div>
+        <div data-aos="flip-left" data-aos-delay="1400" id="skill-cards">
+          <img
+            className="skills-image"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+          />
+          <p>Node Js</p>
+          <Box>
+            <LinearProgress color="success" variant="determinate" value={90} />
+          </Box>
+        </div>
+        <div data-aos="flip-left" data-aos-delay="1400" id="skill-cards">
+          <img
+            className="skills-image"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+          />
+          <p>Express</p>
+          <Box>
+            <LinearProgress color="success" variant="determinate" value={90} />
+          </Box>
+        </div>
       </div>
     </div>
   );

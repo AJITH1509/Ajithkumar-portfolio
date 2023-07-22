@@ -75,7 +75,7 @@ export function Project() {
       <h1 data-aos="fade-down" data-aos-delay="500">
         Project
       </h1>
-      <p>
+      <p data-aos="fade-up" data-aos-delay="500">
         The login credentials are already filled in the text field by default.
       </p>
       <div className="mySwiper">
