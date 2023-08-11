@@ -37,15 +37,6 @@ export function Project() {
       techStack: "Reactjs, NodeJs, Express, MongoDb",
     },
     {
-      id: "movie-app",
-      title: "Movie Review App",
-      imgSrc: movieApp,
-      frontEndSource: "https://github.com/AJITH1509/react-movie-task",
-      live: "https://allinone1.netlify.app",
-      backEndSource: "https://github.com/AJITH1509/express.js-practice",
-      techStack: "Reactjs, NodeJs, Express, MongoDb",
-    },
-    {
       id: "web-scrapper",
       title: "Web Scrapper",
       imgSrc: webScrapper,
