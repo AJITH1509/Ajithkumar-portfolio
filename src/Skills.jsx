@@ -105,6 +105,16 @@ export const Skills = () => {
             <LinearProgress color="success" variant="determinate" value={90} />
           </Box>
         </div>
+        <div data-aos="flip-left" data-aos-delay="1400" id="skill-cards">
+          <img
+            className="skills-image"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg"
+          />
+          <p>Angular</p>
+          <Box>
+            <LinearProgress color="success" variant="determinate" value={70} />
+          </Box>
+        </div>
         <div data-aos="flip-left" data-aos-delay="800" id="skill-cards">
           <img
             className="skills-image"
