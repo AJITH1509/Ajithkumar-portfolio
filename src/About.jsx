@@ -1,35 +1,43 @@
 import * as React from "react";
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import "./About.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { ThemeContext } from "./NavBar";
-import { useContext } from "react";
 
 export const About = () => {
   const { styles } = useContext(ThemeContext);
+
   useEffect(() => {
     AOS.init();
   }, []);
+
   return (
     <div style={{ backgroundColor: styles }} className="about-container">
       <h1 data-aos="fade-down" data-aos-duration="1000">
         About Me
       </h1>
-      <p data-aos="fade-up" data-aos-duration="1500">
-        As a fresh graduate with a passion for web development, I am excited to
-        start my career as a FullStack Developer. I have a strong foundation in
-        <span> HTML, CSS, and JavaScript,</span> as well as proficiency in
-        <span className="courses"> React, Node, Express and MongoDB</span>. I am
-        knowledgeable in both Frontend and Backend development, and I am
-        confident in my ability to handle any part of the process with ease,
-        including database management with MongoDB. As a collaborative team
-        player with a positive attitude, I am willing to learn and grow with the
-        organization. I am committed to staying up-to-date with the latest
-        industry trends and technologies, and I am confident that my dedication
-        and proficiency will allow me to excel in my role and contribute to the
-        success of the team.
-      </p>
+      
+      <div className="about-bio-content" data-aos="fade-up" data-aos-duration="1500">
+        <p className="bio-lead">
+          I am a driven, solutions-oriented <strong>Software Developer</strong> dedicated to engineering high-performance, scalable, and meticulously designed web applications. 
+        </p>
+
+        <p>
+          My technical expertise spans across robust full-stack architectures. I pair a foundational mastery of 
+          <span className="highlight-text"> HTML, CSS, and JavaScript</span> with deep ecosystem proficiency in 
+          <span className="courses"> React, Node.js, Express, and MongoDB</span>, alongside enterprise-ready frontend engineering using 
+          <span className="courses"> Angular, TypeScript, and RxJS</span>. Whether designing optimized database structures or building highly reactive, event-driven user interfaces, I ensure clean code separation and seamless performance at every layer.
+        </p>
+
+        <p>
+          My experience includes managing intricate feature workflows and implementing advanced application logic. I have successfully architected modular <strong>questionnaire and survey management platforms</strong>, built fluid and interactive user workspaces using customized <strong>drag-and-drop functionalities</strong> for complex UI components (such as dynamic tiles and hierarchical folder structures), and optimized multi-tab server communication paths using <strong>global request header protocols</strong> like custom tab identifiers.
+        </p>
+
+        <p>
+          Bringing an engineering-first mindset to software systems, I specialize in translating complex business requirements into maintainable, robust frontend logic. I am a natural collaborator, a passionate problem-solver, and am deeply committed to pushing code boundaries while maintaining a high baseline for accessibility and performance.
+        </p>
+      </div>
     </div>
   );
 };
